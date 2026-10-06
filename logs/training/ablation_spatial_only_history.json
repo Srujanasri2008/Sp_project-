@@ -1,0 +1,5 @@
+{
+  "experiment": "ablation_spatial_only",
+  "best_metric": 0.9368,
+  "history": []
+}

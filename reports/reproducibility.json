@@ -1,0 +1,19 @@
+{
+    "random_seed": 42,
+    "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "win32",
+    "packages": {
+        "torch": "2.14.1+cpu",
+        "torchvision": "0.29.1+cpu",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "pandas": "3.0.6",
+        "sklearn": "1.9.1",
+        "cv2": "5.0.0",
+        "streamlit": "1.64.0"
+    },
+    "cpu_count": 12,
+    "extra_info": {
+        "status": "initialized"
+    }
+}

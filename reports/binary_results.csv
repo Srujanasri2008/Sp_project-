@@ -1,0 +1,2 @@
+model,num_classes,test_loss,accuracy,precision,recall,sensitivity,specificity,f1_score,roc_auc,tp,fp,tn,fn,val_loss
+Proposed Multi-Domain (ARPS + Spatial + Vessel + Frequency),2,0.2695,0.9255,0.9474,0.9032,0.9032,0.9483,0.9248,0.9678,252,14,257,27,0.2695

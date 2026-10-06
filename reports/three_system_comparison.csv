@@ -1,0 +1,4 @@
+system,mode,test_loss,accuracy,precision,recall_sensitivity,specificity,f1_score,roc_auc,tp,fp,tn,fn
+baseline_fixed,baseline,0.264,0.9236,0.9373,0.9104,0.9373,0.9236,0.9771,254,17,254,25
+agcwd_adaptive,agcwd,0.3042,0.9218,0.947,0.8961,0.9483,0.9208,0.9695,250,14,257,29
+proposed_arps_spatial,proposed_arps,0.2677,0.9236,0.9247,0.9247,0.9225,0.9247,0.9712,258,21,250,21

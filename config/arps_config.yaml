@@ -1,0 +1,48 @@
+# ARPS (Adaptive Retinal Signal-Preservation Score) Configuration
+# Frozen research specification parameters
+
+arps:
+  version: "1.0.0-frozen"
+  description: "Image-condition-guided adaptive candidate-path selection based on retinal-information preservation"
+  
+  weights:
+    contrast: 0.08230652499670243
+    vessel: 0.0689232338703772
+    detail: 0.42840850268781994
+    illumination: 0.28237726704874355
+    noise: 0.13798447139635686
+    
+  constraints:
+    min_vessel_similarity: 0.85
+    max_delta_noise: 2.5
+    min_delta_contrast: -5.0
+    
+  # Documented fallback rule when no candidate satisfies all constraints:
+  # 1. Evaluate valid candidates that satisfy all 3 constraints.
+  # 2. If one or more satisfy constraints, select candidate with highest ARPS score.
+  # 3. If no candidate satisfies all constraints:
+  #    - Find candidate with minimal constraint penalty:
+  #      penalty = max(0, 0.85 - vessel_sim)*10 + max(0, delta_noise - 2.5) + max(0, -5.0 - delta_contrast)
+  #    - If tied or unresolvable, fall back to PATH_A (standard clinical baseline).
+  fallback_policy: "least_penalty_or_path_a"
+  default_fallback_path: "PATH_A"
+
+candidate_paths:
+  PATH_A:
+    description: "LAB color space with L-channel CLAHE"
+    clahe_clip_limit: 1.5
+    clahe_tile_grid: [8, 8]
+    
+  PATH_B:
+    description: "Gaussian Blur 3x3 followed by Path A"
+    blur_kernel: [3, 3]
+    clahe_clip_limit: 1.5
+    clahe_tile_grid: [8, 8]
+    
+  PATH_C:
+    description: "Illumination correction followed by Path A"
+    gaussian_sigma: 15.0
+    floor: 0.05
+    mean_scaling: true
+    clahe_clip_limit: 1.5
+    clahe_tile_grid: [8, 8]

@@ -1,0 +1,68 @@
+{
+  "experiment": "ablation_spatial_plus_frequency",
+  "best_metric": 0.936,
+  "history": [
+    {
+      "epoch": 4,
+      "train_loss": 0.1812,
+      "train_acc": 0.9442,
+      "val_loss": 0.25304452958559187,
+      "val_metrics": {
+        "accuracy": 0.9344,
+        "precision": 0.9654,
+        "recall": 0.9029,
+        "sensitivity": 0.9029,
+        "specificity": 0.9668,
+        "f1_score": 0.9331,
+        "roc_auc": 0.9613,
+        "confusion_matrix": [
+          [
+            262,
+            9
+          ],
+          [
+            27,
+            251
+          ]
+        ],
+        "tp": 251,
+        "fp": 9,
+        "tn": 262,
+        "fn": 27,
+        "val_loss": 0.253
+      },
+      "time_sec": 788.0
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.1513,
+      "train_acc": 0.9559,
+      "val_loss": 0.29820640553136735,
+      "val_metrics": {
+        "accuracy": 0.9362,
+        "precision": 0.9728,
+        "recall": 0.8993,
+        "sensitivity": 0.8993,
+        "specificity": 0.9742,
+        "f1_score": 0.9346,
+        "roc_auc": 0.9727,
+        "confusion_matrix": [
+          [
+            264,
+            7
+          ],
+          [
+            28,
+            250
+          ]
+        ],
+        "tp": 250,
+        "fp": 7,
+        "tn": 264,
+        "fn": 28,
+        "val_loss": 0.2982
+      },
+      "time_sec": 534.5
+    }
+  ]
+}

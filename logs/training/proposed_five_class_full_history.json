@@ -1,0 +1,481 @@
+{
+  "experiment": "proposed_five_class_full",
+  "best_metric": 0.6764,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.4929,
+      "train_acc": 0.4861,
+      "val_loss": 1.3057801763650931,
+      "val_metrics": {
+        "accuracy": 0.5628,
+        "macro_precision": 0.4257,
+        "macro_recall": 0.4202,
+        "macro_f1": 0.3546,
+        "qwk": 0.5188,
+        "roc_auc_macro": 0.8086,
+        "confusion_matrix": [
+          [
+            242,
+            2,
+            0,
+            23,
+            4
+          ],
+          [
+            4,
+            36,
+            2,
+            9,
+            4
+          ],
+          [
+            16,
+            62,
+            16,
+            37,
+            19
+          ],
+          [
+            4,
+            9,
+            1,
+            9,
+            6
+          ],
+          [
+            6,
+            15,
+            4,
+            13,
+            6
+          ]
+        ],
+        "per_class": {
+          "No DR": {
+            "class_id": 0,
+            "true_count": 271,
+            "pred_count": 272,
+            "precision": 0.8897,
+            "recall": 0.893,
+            "f1_score": 0.8913
+          },
+          "Mild DR": {
+            "class_id": 1,
+            "true_count": 55,
+            "pred_count": 124,
+            "precision": 0.2903,
+            "recall": 0.6545,
+            "f1_score": 0.4022
+          },
+          "Moderate DR": {
+            "class_id": 2,
+            "true_count": 150,
+            "pred_count": 23,
+            "precision": 0.6957,
+            "recall": 0.1067,
+            "f1_score": 0.185
+          },
+          "Severe DR": {
+            "class_id": 3,
+            "true_count": 29,
+            "pred_count": 91,
+            "precision": 0.0989,
+            "recall": 0.3103,
+            "f1_score": 0.15
+          },
+          "Proliferative DR": {
+            "class_id": 4,
+            "true_count": 44,
+            "pred_count": 39,
+            "precision": 0.1538,
+            "recall": 0.1364,
+            "f1_score": 0.1446
+          }
+        },
+        "val_loss": 1.3058
+      },
+      "time_sec": 666.3
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.3065,
+      "train_acc": 0.5892,
+      "val_loss": 1.3030623235554861,
+      "val_metrics": {
+        "accuracy": 0.6521,
+        "macro_precision": 0.451,
+        "macro_recall": 0.4474,
+        "macro_f1": 0.4019,
+        "qwk": 0.4675,
+        "roc_auc_macro": 0.8325,
+        "confusion_matrix": [
+          [
+            261,
+            4,
+            2,
+            3,
+            1
+          ],
+          [
+            6,
+            41,
+            6,
+            1,
+            1
+          ],
+          [
+            30,
+            55,
+            50,
+            14,
+            1
+          ],
+          [
+            7,
+            11,
+            6,
+            5,
+            0
+          ],
+          [
+            16,
+            13,
+            11,
+            3,
+            1
+          ]
+        ],
+        "per_class": {
+          "No DR": {
+            "class_id": 0,
+            "true_count": 271,
+            "pred_count": 320,
+            "precision": 0.8156,
+            "recall": 0.9631,
+            "f1_score": 0.8832
+          },
+          "Mild DR": {
+            "class_id": 1,
+            "true_count": 55,
+            "pred_count": 124,
+            "precision": 0.3306,
+            "recall": 0.7455,
+            "f1_score": 0.4581
+          },
+          "Moderate DR": {
+            "class_id": 2,
+            "true_count": 150,
+            "pred_count": 75,
+            "precision": 0.6667,
+            "recall": 0.3333,
+            "f1_score": 0.4444
+          },
+          "Severe DR": {
+            "class_id": 3,
+            "true_count": 29,
+            "pred_count": 26,
+            "precision": 0.1923,
+            "recall": 0.1724,
+            "f1_score": 0.1818
+          },
+          "Proliferative DR": {
+            "class_id": 4,
+            "true_count": 44,
+            "pred_count": 4,
+            "precision": 0.25,
+            "recall": 0.0227,
+            "f1_score": 0.0417
+          }
+        },
+        "val_loss": 1.3031
+      },
+      "time_sec": 653.7
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.1908,
+      "train_acc": 0.6504,
+      "val_loss": 1.2983810744758946,
+      "val_metrics": {
+        "accuracy": 0.6302,
+        "macro_precision": 0.4491,
+        "macro_recall": 0.4685,
+        "macro_f1": 0.4298,
+        "qwk": 0.6028,
+        "roc_auc_macro": 0.8413,
+        "confusion_matrix": [
+          [
+            255,
+            3,
+            7,
+            2,
+            4
+          ],
+          [
+            3,
+            35,
+            3,
+            3,
+            11
+          ],
+          [
+            15,
+            45,
+            36,
+            17,
+            37
+          ],
+          [
+            3,
+            6,
+            4,
+            6,
+            10
+          ],
+          [
+            5,
+            15,
+            9,
+            1,
+            14
+          ]
+        ],
+        "per_class": {
+          "No DR": {
+            "class_id": 0,
+            "true_count": 271,
+            "pred_count": 281,
+            "precision": 0.9075,
+            "recall": 0.941,
+            "f1_score": 0.9239
+          },
+          "Mild DR": {
+            "class_id": 1,
+            "true_count": 55,
+            "pred_count": 104,
+            "precision": 0.3365,
+            "recall": 0.6364,
+            "f1_score": 0.4403
+          },
+          "Moderate DR": {
+            "class_id": 2,
+            "true_count": 150,
+            "pred_count": 59,
+            "precision": 0.6102,
+            "recall": 0.24,
+            "f1_score": 0.3445
+          },
+          "Severe DR": {
+            "class_id": 3,
+            "true_count": 29,
+            "pred_count": 29,
+            "precision": 0.2069,
+            "recall": 0.2069,
+            "f1_score": 0.2069
+          },
+          "Proliferative DR": {
+            "class_id": 4,
+            "true_count": 44,
+            "pred_count": 76,
+            "precision": 0.1842,
+            "recall": 0.3182,
+            "f1_score": 0.2333
+          }
+        },
+        "val_loss": 1.2984
+      },
+      "time_sec": 380.2
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.1168,
+      "train_acc": 0.6598,
+      "val_loss": 1.251875103171406,
+      "val_metrics": {
+        "accuracy": 0.6612,
+        "macro_precision": 0.486,
+        "macro_recall": 0.4963,
+        "macro_f1": 0.4659,
+        "qwk": 0.6247,
+        "roc_auc_macro": 0.8548,
+        "confusion_matrix": [
+          [
+            261,
+            4,
+            2,
+            0,
+            4
+          ],
+          [
+            3,
+            36,
+            4,
+            2,
+            10
+          ],
+          [
+            21,
+            41,
+            44,
+            12,
+            32
+          ],
+          [
+            3,
+            4,
+            8,
+            6,
+            8
+          ],
+          [
+            7,
+            10,
+            11,
+            0,
+            16
+          ]
+        ],
+        "per_class": {
+          "No DR": {
+            "class_id": 0,
+            "true_count": 271,
+            "pred_count": 295,
+            "precision": 0.8847,
+            "recall": 0.9631,
+            "f1_score": 0.9223
+          },
+          "Mild DR": {
+            "class_id": 1,
+            "true_count": 55,
+            "pred_count": 95,
+            "precision": 0.3789,
+            "recall": 0.6545,
+            "f1_score": 0.48
+          },
+          "Moderate DR": {
+            "class_id": 2,
+            "true_count": 150,
+            "pred_count": 69,
+            "precision": 0.6377,
+            "recall": 0.2933,
+            "f1_score": 0.4018
+          },
+          "Severe DR": {
+            "class_id": 3,
+            "true_count": 29,
+            "pred_count": 20,
+            "precision": 0.3,
+            "recall": 0.2069,
+            "f1_score": 0.2449
+          },
+          "Proliferative DR": {
+            "class_id": 4,
+            "true_count": 44,
+            "pred_count": 70,
+            "precision": 0.2286,
+            "recall": 0.3636,
+            "f1_score": 0.2807
+          }
+        },
+        "val_loss": 1.2519
+      },
+      "time_sec": 396.7
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.0331,
+      "train_acc": 0.7046,
+      "val_loss": 1.2386879684278005,
+      "val_metrics": {
+        "accuracy": 0.6557,
+        "macro_precision": 0.4902,
+        "macro_recall": 0.4929,
+        "macro_f1": 0.453,
+        "qwk": 0.6764,
+        "roc_auc_macro": 0.8626,
+        "confusion_matrix": [
+          [
+            262,
+            4,
+            0,
+            1,
+            4
+          ],
+          [
+            3,
+            33,
+            7,
+            3,
+            9
+          ],
+          [
+            14,
+            36,
+            39,
+            5,
+            56
+          ],
+          [
+            2,
+            4,
+            7,
+            4,
+            12
+          ],
+          [
+            2,
+            11,
+            9,
+            0,
+            22
+          ]
+        ],
+        "per_class": {
+          "No DR": {
+            "class_id": 0,
+            "true_count": 271,
+            "pred_count": 283,
+            "precision": 0.9258,
+            "recall": 0.9668,
+            "f1_score": 0.9458
+          },
+          "Mild DR": {
+            "class_id": 1,
+            "true_count": 55,
+            "pred_count": 88,
+            "precision": 0.375,
+            "recall": 0.6,
+            "f1_score": 0.4615
+          },
+          "Moderate DR": {
+            "class_id": 2,
+            "true_count": 150,
+            "pred_count": 62,
+            "precision": 0.629,
+            "recall": 0.26,
+            "f1_score": 0.3679
+          },
+          "Severe DR": {
+            "class_id": 3,
+            "true_count": 29,
+            "pred_count": 13,
+            "precision": 0.3077,
+            "recall": 0.1379,
+            "f1_score": 0.1905
+          },
+          "Proliferative DR": {
+            "class_id": 4,
+            "true_count": 44,
+            "pred_count": 103,
+            "precision": 0.2136,
+            "recall": 0.5,
+            "f1_score": 0.2993
+          }
+        },
+        "val_loss": 1.2387
+      },
+      "time_sec": 389.2
+    }
+  ]
+}

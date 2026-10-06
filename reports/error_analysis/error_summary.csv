@@ -1,0 +1,7 @@
+category,count,percentage
+All 3 Systems Correct,495,90.0
+All 3 Systems Fail (Universal Hard),28,5.09
+"Proposed Advantage (Proposed Right, Comparators Wrong)",3,0.55
+"Proposed Unique Error (Proposed Wrong, Comparators Right)",1,0.18
+Proposed False Positives,14,2.55
+Proposed False Negatives,27,4.91

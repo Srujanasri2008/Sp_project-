@@ -1,0 +1,5 @@
+ablation,vessel_branch,frequency_branch,feature_dim,test_loss,accuracy,precision,sensitivity,specificity,f1_score,roc_auc
+spatial_only,False,False,1280,0.2677,0.9236,0.9247,0.9247,0.9225,0.9247,0.9712
+spatial_plus_vessel,True,False,1408,0.2447,0.9327,0.9449,0.9211,0.9446,0.9328,0.9718
+spatial_plus_frequency,False,True,1408,0.2424,0.9291,0.9286,0.9319,0.9262,0.9302,0.9631
+full_multidomain_fusion,True,True,1536,0.2463,0.9327,0.9515,0.914,0.952,0.9324,0.9718

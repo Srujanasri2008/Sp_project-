@@ -1,0 +1,4 @@
+comparison,both_correct (n11),Baseline_only_correct (n10),AGCWD_only_correct (n01),both_incorrect (n00),statistic,raw_p_value,exact_test,holm_corrected_p_value,significant_at_0.05,Proposed_only_correct (n01),AGCWD_only_correct (n10)
+Baseline vs AGCWD,496,12.0,11.0,31,11.0,1.0,True,1.0,False,,
+Baseline vs Proposed,501,7.0,,34,7.0,1.0,True,1.0,False,8.0,
+AGCWD vs Proposed,500,,,34,7.0,0.803619384765625,True,1.0,False,9.0,7.0

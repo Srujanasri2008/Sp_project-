@@ -1,0 +1,62 @@
+# Master Project Configuration
+# Adaptive Multi-Domain Signal Processing and Deep Learning for Diabetic Retinopathy Detection
+
+project:
+  title: "Adaptive Multi-Domain Signal Processing and Deep Learning for Diabetic Retinopathy Detection from Retinal Fundus Images"
+  seed: 42
+  device: "cpu"
+  safe_cpu_threads: 4
+
+data:
+  dataset_name: "bumbledeep/aptos"
+  expected_total_images: 3662
+  image_size: [224, 224]
+  channels: 3
+  
+  splits:
+    train_count: 2563
+    val_count: 549
+    test_count: 550
+    manifest_path: "data/splits/official_split_manifest.csv"
+    indices_path: "data/splits/official_split_indices.json"
+    
+  classes:
+    five_class:
+      0: "No DR"
+      1: "Mild DR"
+      2: "Moderate DR"
+      3: "Severe DR"
+      4: "Proliferative DR"
+    binary:
+      0: "Normal"
+      1: "DR"
+
+model:
+  backbone: "efficientnet_b0"
+  spatial_feature_dim: 1280
+  vessel_feature_dim: 128
+  frequency_feature_dim: 128
+  fusion_feature_dim: 1536
+  dropout: 0.3
+
+training:
+  batch_size: 16
+  num_workers: 0  # Crucial for Windows stability and memory conservation
+  learning_rate: 0.0001
+  weight_decay: 0.00001
+  max_epochs: 10
+  patience: 3
+  checkpoint_dir_binary: "models/binary"
+  checkpoint_dir_five_class: "models/five_class"
+  checkpoint_dir_comparison: "models/comparison"
+
+inference:
+  batch_size: 16
+  num_workers: 0
+
+consistency:
+  rule: "five_class == 0 -> binary 0; five_class in {1,2,3,4} -> binary 1"
+
+safety:
+  min_disk_free_gb: 5.0
+  max_memory_percent: 85.0

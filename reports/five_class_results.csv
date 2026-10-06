@@ -1,0 +1,2 @@
+model,num_classes,test_loss,accuracy,macro_precision,macro_recall,macro_f1,qwk,roc_auc_macro
+Proposed Multi-Domain (ARPS + Spatial + Vessel + Frequency),5,1.2921,0.6345,0.4597,0.4452,0.4269,0.6379,0.8468

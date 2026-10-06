@@ -1,0 +1,32 @@
+# Local Python environment and test/runtime caches
+.venv/
+.pytest_cache/
+**/__pycache__/
+*.py[cod]
+
+# Local dataset images; recreate/download with scripts/prepare_dataset.py
+data/raw/images/
+data/processed/
+
+# Generated per-image outputs and runtime logs
+outputs/inference/
+logs/inference/predictions.csv
+logs/validation/pytest_latest.txt
+logs/validation/pytest_latest.json
+figures/gradcam/
+
+# Keep only app inference checkpoints in Git LFS; comparison/ablation weights
+# and resumable training checkpoints can be reproduced from the scripts.
+models/*
+!models/binary/
+!models/five_class/
+models/binary/*
+!models/binary/best_model.pt
+models/five_class/*
+!models/five_class/best_model.pt
+
+# Local/editor files
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
