@@ -5,8 +5,8 @@ DIABETIC RETINOPATHY DETECTION FROM RETINAL FUNDUS IMAGES
 PROJECT AND TEAM
 ----------------
 Project: DR fundus-image screening and five-class severity research/demo system.
-Team members: [ADD EACH TEAM MEMBER'S FULL NAME, STUDENT ID, AND CONTRIBUTION]
-Course/review: [ADD COURSE AND REVIEW DETAILS]
+Team members: [B.Sri.Srujana(2520040005), S.Srikar prathap(2520040006), Bhargavi (2520040048), AND CONTRIBUTION]
+Course/review: [Signal processing]
 
 GitHub project:
 https://github.com/Srujanasri2008/Sp_project-
